@@ -1,4 +1,4 @@
-import jwt_decode from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 
 export default function Profile({ user }) {
   return (
@@ -32,7 +32,7 @@ const styles = {
 
 export async function getServerSideProps(context) {
   const { id_token } = context.query;
-  const user = jwt_decode(id_token);
+  const user = jwtDecode(id_token); // ✅ BURASI!
   return {
     props: { user },
   };
