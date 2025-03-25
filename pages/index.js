@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <main style={styles.container}>
       <img src="/logo.svg" alt="Logo" style={styles.logo} />
-      <h1 style={styles.title}>Azure Entra ID Giriş Testi</h1>
+      <h1 style={styles.title}>Microsoft Azure Entra ID Giriş Testi</h1>
       <button onClick={login} style={styles.button}>Microsoft 365 Hesabı ile Giriş Yapın</button>
     </main>
   );
